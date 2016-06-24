@@ -12,7 +12,14 @@ class CreateBlogsTable extends Migration
      */
     public function up()
     {
-        //
+         Schema::create('blogs', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('title');
+            $table->string('body');
+            $table->string('author');
+            $table->string('image');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -22,6 +29,6 @@ class CreateBlogsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('blogs');
     }
 }

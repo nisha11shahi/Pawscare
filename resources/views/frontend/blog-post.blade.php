@@ -1,3 +1,8 @@
+@extends('includes.header')
+
+
+@section('content')
+
 <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
@@ -122,3 +127,4 @@
         <!-- /.row -->
 
         <hr>
+@extends('includes.footer')

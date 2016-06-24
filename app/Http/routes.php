@@ -29,4 +29,15 @@ Route::get('/lostandfound', 'LostandFoundController@show');
 Route::get('/blog', 'BlogController@show');
 Route::get('/contact', 'ContactMessageController@show');
 Route::get('/adoptform', 'AdoptController@showform');
+Route::get('/singlepost', 'BlogController@showsinglepost');
 
+
+
+Route::get('/viewalladopt', 'AdminAdoptionController@viewall');
+
+Route::get('/adminadoption', 'AdminAdoptionController@showform');
+
+Route::post('/submitadoptionform', 'AdminAdoptionController@addnewanimal');
+
+Route::get('view/{view}','AdminAdoptionController@viewAdoption')->name('adoptions.view');
+Route::get('delete/{delete}','AdminAdoptionController@deleteAdoption')->name('adoptions.delete');

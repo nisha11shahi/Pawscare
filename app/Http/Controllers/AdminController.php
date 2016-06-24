@@ -8,7 +8,8 @@ use App\Http\Requests;
 
 class AdminController extends Controller
 {
-    public function showdashboard(){
+    public function showdashboard()
+    {
     	return view('admin/dashboard');
     }
 }

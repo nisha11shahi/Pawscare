@@ -12,7 +12,14 @@ class CreateAdoptionsTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('adoptions', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('image');
+            $table->string('description');
+            $table->string('name');
+            $table->string('author_id');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -22,6 +29,6 @@ class CreateAdoptionsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('adoptions');
     }
 }

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>pawsCARE</title>
 
     <!-- Bootstrap Core CSS -->
    <link href="{{asset('/assets/bower_components/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -21,7 +21,7 @@
     <!-- Custom Fonts -->
     <link href="{{asset('/assets/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 
-  
+   <link href="{{asset('/assets/css/mystyle.css')}}" rel="stylesheet">
 
     <!-- Timeline CSS -->
     <link href="{{asset('assets/dist/css/timeline.css')}}" rel="stylesheet">
@@ -54,7 +54,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html">pawsCARE</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -96,22 +96,22 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="{{ url('/admindashboard') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="blog.html"><i class="fa fa-dashboard fa-fw"></i> Blog</a>
+                            <a href="{{ url('/adminblog') }}"><i class="fa fa-dashboard fa-fw"></i> Blog</a>
                         </li>
                         <li>
-                            <a href="lostandfound.html"><i class="fa fa-dashboard fa-fw"></i> Lost and Found</a>
+                            <a href="{{ url('/adminlostandfound') }}"><i class="fa fa-dashboard fa-fw"></i> Lost and Found</a>
                         </li>
                         <li>
-                            <a href="adoption.html"><i class="fa fa-dashboard fa-fw"></i> Adoption</a>
+                            <a href="{{ url('/adminadoption') }}"><i class="fa fa-dashboard fa-fw"></i> Adoption</a>
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Message</a>
+                            <a href="{{ url('/adminmessage') }}"><i class="fa fa-dashboard fa-fw"></i> Message</a>
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Admin</a>
+                            <a href="{{ url('/adminusers') }}"><i class="fa fa-dashboard fa-fw"></i> Admin</a>
                         </li>
                         
                         

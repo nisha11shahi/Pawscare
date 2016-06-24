@@ -12,7 +12,12 @@ class CreateLostandfoundsTable extends Migration
      */
     public function up()
     {
-        //
+         Schema::create('lostandfounds', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('image');
+            $table->string('description');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -22,6 +27,6 @@ class CreateLostandfoundsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('lostandfounds');
     }
 }

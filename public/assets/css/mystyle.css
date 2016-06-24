@@ -33,3 +33,11 @@ div.thumbnail img{
 	height: 350px;
 	width: 450px;
 }
+
+.main-footer{
+	padding-bottom: 0 !important;
+}
+
+.viewallbutton{
+	float: right;
+}

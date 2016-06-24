@@ -1,8 +1,8 @@
  @yield('content')
 
-<footer>
+<div class="footer">
             
-            <div class="main">
+            <div class="footer-main">
         
             <div class="footer-grids">
                 <div class="footer one">
