@@ -1,0 +1,35 @@
+.adoptbutton{
+	position:relative;
+	padding-bottom:30px;
+	text-align:center;
+}
+
+.contactForm{
+	padding-bottom: 30px;
+}
+
+.view{
+	padding-bottom: 30px;
+}
+
+.adoptform{
+	padding-top: 300px;
+}
+
+.reportform{
+	padding-top: 35px;
+}
+
+.jumbotron{
+	    padding: 40px;
+}
+
+div.fill img{
+	height: 500px;
+	width: 1500px;
+}
+
+div.thumbnail img{
+	height: 350px;
+	width: 450px;
+}
