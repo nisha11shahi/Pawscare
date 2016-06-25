@@ -34,10 +34,25 @@ Route::get('/singlepost', 'BlogController@showsinglepost');
 
 
 Route::get('/viewalladopt', 'AdminAdoptionController@viewall');
-
 Route::get('/adminadoption', 'AdminAdoptionController@showform');
-
 Route::post('/submitadoptionform', 'AdminAdoptionController@addnewanimal');
 
-Route::get('view/{view}','AdminAdoptionController@viewAdoption')->name('adoptions.view');
 Route::get('delete/{delete}','AdminAdoptionController@deleteAdoption')->name('adoptions.delete');
+Route::get('view/{view}','AdminAdoptionController@viewAdoption')->name('adoptions.view');
+
+
+Route::get('/viewalllostandfound', 'AdminLostandFoundController@viewall');
+Route::get('/adminlostandfound', 'AdminLostandFoundController@showform');
+Route::post('/submitlostform', 'AdminLostandFoundController@addnewanimal');
+
+Route::get('delete/{delete}','AdminLostandFoundController@deleteAnimal')->name('lostandfounds.delete');
+
+
+Route::get('/adminblog', 'AdminBlogController@showform');
+
+// Route::get('/adminusers', 'UserController@showlist');
+
+Route::get('adminusers', [
+	'middleware' => 'auth',
+	'uses' => 'UserController@showlist'
+	]);

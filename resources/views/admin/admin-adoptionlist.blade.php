@@ -25,9 +25,8 @@
 
                         <a href="{{URL::route('adoptions.delete',$adoption->id)}}"
                                             class="btn btn-danger"> Delete </a>
-
-                                            <a href="{{URL::route('adoptions.view',$adoption->id)}}"
-                                                class="btn btn-success"> View </a>
+                         <a href="{{URL::route('adoptions.view',$adoption->id)}}"
+                                            class="btn btn-success"> View </a>
 
                         </td>
                     </tr>

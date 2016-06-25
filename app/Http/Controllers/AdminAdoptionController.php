@@ -38,11 +38,15 @@ class AdminAdoptionController extends Controller
         
         return redirect()->back();
     }
-    public function viewAdoption($id)
+   
+public function view($id)
     {
-    	$Adopt=Adoption::find($id);
-    	return view('admin-singleadoption')->with('adopt',$Adopt);
+        $Adopt=Adoption::find($id);
+        $Adopt->delete();
+        return redirect()->back();
     }
+
+
     public function deleteAdoption($id)
     {
     	$Adopt=Adoption::find($id);
