@@ -61,3 +61,5 @@ Route::get('adminusers', [
 Route::post('/submitcontactform', 'ContactMessageController@submitcontactform');
 
 Route::post('/submitadoptform', 'AdoptController@submitadoptform');
+
+Route::post('/reportemergency', 'EmergencyController@submitemergencyform');

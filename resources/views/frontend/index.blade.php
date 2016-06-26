@@ -84,25 +84,31 @@
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <div class="form-group ">
                                     <label class="control-label" for="inputSuccess1">Name</label>
-                                    <input type="text" class="form-control" id="postTitle" aria-describedby="helpBlock2" name="title">
+                                    <input type="text" class="form-control" id="postTitle" aria-describedby="helpBlock2" name="name">
                                 </div>
 
                                 <div class="form-group ">
                                     <label class="control-label" for="inputSuccess1">Phone Number</label>
-                                    <input type="text" class="form-control" id="postTitle" aria-describedby="helpBlock2" name="title">
+                                    <input type="text" class="form-control" id="postTitle" aria-describedby="helpBlock2" name="contact">
                                 </div>
 
                                 <div class="form-group ">
                                     <label class="control-label" for="inputSuccess1">Description of the case</label>
-                                    <textarea class="form-control" rows="5" id="postBody" name="postbody"></textarea> 
+                                    <textarea class="form-control" rows="5" id="postBody" name="description"></textarea> 
                                 </div>
 
                                 <div class="form-group ">
                                     <input type="file" name="pic" accept="image/*">
                                 </div>
+                                <div class="form-group ">
+                                    <label class="control-label" for="inputSuccess1">Email</label>
+                                    <input type="text" class="form-control" id="postTitle" aria-describedby="helpBlock2" name="email">
+                                </div>
+                                <p><button type="submit" class="btn btn-primary">Send</button>
+</p>
                             </form>
 
-                            <p><a class="btn btn-primary btn-lg" href="#" role="button">Send</a></p>
+        
                         </div>
                     </div>
                 </div>
