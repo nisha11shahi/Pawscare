@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Paws-Care</title>
+    <title>pawsCARE</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{asset('/assets/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -44,7 +44,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{url('/')}}">Paws-Care</a>
+                <a class="navbar-brand" href="{{url('/')}}">pawsCARE</a>
                 
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->

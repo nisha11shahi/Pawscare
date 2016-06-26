@@ -80,7 +80,8 @@
                     <div class="panel-body">
                         <div class="jumbotron">
                             <h2>REPORT EMERGENCY</h2> <hr>
-                            <form role="form" method="POST" action="demo_form.asp">
+                            <form role="form" method="POST" action="{{url('/reportemergency')}}">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <div class="form-group ">
                                     <label class="control-label" for="inputSuccess1">Name</label>
                                     <input type="text" class="form-control" id="postTitle" aria-describedby="helpBlock2" name="title">

@@ -4,8 +4,8 @@
 <div id="page-wrapper" class="reportform">
 
 <h2 style="padding-top: 30px">Add Animals for adoption</h2>
-<a href="{{url('/viewalladopt')}}"><button type="submit" class="btn btn-primary">View All</button></a>
-    <br/>
+<a href="{{url('/viewalladopt')}}"><button type="submit" class="btn btn-primary">View Animal List</button></a>
+    <a href="{{url('/viewalladoptmessage')}}"><button type="submit" class="btn btn-primary">View Adoption Request Messages</button></a><br/>
     <hr>
     <form role="form" method="POST" action="{{url('/submitadoptionform')}}" enctype="multipart/form-data">
       <input type="hidden" name="_token" value="{{ csrf_token() }}">

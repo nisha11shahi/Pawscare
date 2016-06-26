@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Adoption;
+use App\Requestadopt;
+
 
 class AdminAdoptionController extends Controller
 {
@@ -17,6 +19,11 @@ class AdminAdoptionController extends Controller
     public function viewall(){
         $Adoptions= Adoption::all();
         return view('admin/admin-adoptionlist')->with('adoptions',$Adoptions);
+    }
+
+    public function viewallmessage(){
+        $Adoptions= Requestadopt::all();
+        return view('admin/admin-adoptionmessage')->with('requestadopts',$Adoptions);
     }
     public function addnewanimal(Request $request)
     {
@@ -39,13 +46,6 @@ class AdminAdoptionController extends Controller
         return redirect()->back();
     }
    
-public function view($id)
-    {
-        $Adopt=Adoption::find($id);
-        $Adopt->delete();
-        return redirect()->back();
-    }
-
 
     public function deleteAdoption($id)
     {

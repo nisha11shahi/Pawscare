@@ -9,10 +9,10 @@
 		<table class="table table-striped table-bordered" id="mydata">
 			<thead>
 				<tr>
-					<th>id </th>
-					<th>User </th>
-					<th>Email </th>
-					<th>Action </th>
+					<th>id</th>
+					<th>User</th>
+					<th>Email</th>
+					
 				</tr>
 			</thead>
 			<tbody>
@@ -22,12 +22,7 @@
 					<td>{{$user->id}}</td>
 					<td>{{$user->name}}</td>
 					<td>{{$user->email}} </td>
-					<td>
-
-						<a href="{{URL::route('users.view',$user->id)}}"
-							class="btn btn-success"> View </a>
-
-						</td>
+					
 					</tr>
 
 					@endforeach

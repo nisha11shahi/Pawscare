@@ -16,7 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('admin', [
-
 	'middleware' => 'auth',
     'uses' =>'AdminController@showdashboard'
 ]);
@@ -34,25 +33,31 @@ Route::get('/singlepost', 'BlogController@showsinglepost');
 
 
 Route::get('/viewalladopt', 'AdminAdoptionController@viewall');
+Route::get('/viewalladoptmessage', 'AdminAdoptionController@viewallmessage');
 Route::get('/adminadoption', 'AdminAdoptionController@showform');
 Route::post('/submitadoptionform', 'AdminAdoptionController@addnewanimal');
+Route::get('deleteadoption/{delete}','AdminAdoptionController@deleteAdoption')->name('adoptions.delete');
 
-Route::get('delete/{delete}','AdminAdoptionController@deleteAdoption')->name('adoptions.delete');
-Route::get('view/{view}','AdminAdoptionController@viewAdoption')->name('adoptions.view');
 
 
 Route::get('/viewalllostandfound', 'AdminLostandFoundController@viewall');
 Route::get('/adminlostandfound', 'AdminLostandFoundController@showform');
 Route::post('/submitlostform', 'AdminLostandFoundController@addnewanimal');
-
 Route::get('delete/{delete}','AdminLostandFoundController@deleteAnimal')->name('lostandfounds.delete');
 
 
+Route::get('/adminmessage', 'AdminMessageController@showmessagelist');
+
 Route::get('/adminblog', 'AdminBlogController@showform');
+Route::get('/postblog', 'AdminBlogController@submitpost');
 
 // Route::get('/adminusers', 'UserController@showlist');
 
 Route::get('adminusers', [
 	'middleware' => 'auth',
-	'uses' => 'UserController@showlist'
+	'uses' => 'AdminController@showlist'
 	]);
+
+Route::post('/submitcontactform', 'ContactMessageController@submitcontactform');
+
+Route::post('/submitadoptform', 'AdoptController@submitadoptform');

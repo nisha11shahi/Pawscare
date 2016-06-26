@@ -83,7 +83,6 @@
                         
                    
     </div>
-    form
     <!-- /#wrapper -->
 
     <!-- jQuery -->
