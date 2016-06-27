@@ -25,7 +25,7 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 Route::get('/adopt', 'AdoptController@show');
 Route::get('/lostandfound', 'LostandFoundController@show');
-Route::get('/blog', 'BlogController@show');
+Route::get('/blog', 'BlogController@showallpost');
 Route::get('/contact', 'ContactMessageController@show');
 Route::get('/adoptform', 'AdoptController@showform');
 Route::get('/singlepost', 'BlogController@showsinglepost');
@@ -37,7 +37,7 @@ Route::get('/viewalladoptmessage', 'AdminAdoptionController@viewallmessage');
 Route::get('/adminadoption', 'AdminAdoptionController@showform');
 Route::post('/submitadoptionform', 'AdminAdoptionController@addnewanimal');
 Route::get('deleteadoption/{delete}','AdminAdoptionController@deleteAdoption')->name('adoptions.delete');
-
+Route::get('deleteblog/{delete}','AdminBlogController@deleteblog')->name('blogs.delete');
 
 
 Route::get('/viewalllostandfound', 'AdminLostandFoundController@viewall');
@@ -49,7 +49,9 @@ Route::get('delete/{delete}','AdminLostandFoundController@deleteAnimal')->name('
 Route::get('/adminmessage', 'AdminMessageController@showmessagelist');
 
 Route::get('/adminblog', 'AdminBlogController@showform');
-Route::get('/postblog', 'AdminBlogController@submitpost');
+
+Route::post('/postblog', 'AdminBlogController@submitpost');
+Route::get('/viewallpost', 'AdminBlogController@viewallblogs');
 
 // Route::get('/adminusers', 'UserController@showlist');
 
@@ -63,3 +65,7 @@ Route::post('/submitcontactform', 'ContactMessageController@submitcontactform');
 Route::post('/submitadoptform', 'AdoptController@submitadoptform');
 
 Route::post('/reportemergency', 'EmergencyController@submitemergencyform');
+
+Route::get('/viewemergencymessage', 'AdminEmergencyController@viewemergencymessage');
+
+Route::get('userdelete/{delete}','UserController@deleteAdmin')->name('users.delete');

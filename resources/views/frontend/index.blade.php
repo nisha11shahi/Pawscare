@@ -76,11 +76,14 @@
     <div class="row reportform">
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
-                    
+                    @if(Session::has('flash_message'))
+                    <div class="alert alert-danger"><em> {!! session('flash_message') !!}</em></div>
+                        @endif
                     <div class="panel-body">
                         <div class="jumbotron">
                             <h2>REPORT EMERGENCY</h2> <hr>
-                            <form role="form" method="POST" action="{{url('/reportemergency')}}">
+                            <form role="form" method="POST" action="{{url('/reportemergency')}}" 
+                            enctype="multipart/form-data">
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <div class="form-group ">
                                     <label class="control-label" for="inputSuccess1">Name</label>
@@ -98,17 +101,14 @@
                                 </div>
 
                                 <div class="form-group ">
-                                    <input type="file" name="pic" accept="image/*">
+                                    <input type="file" name="image1" id="image1">
                                 </div>
                                 <div class="form-group ">
                                     <label class="control-label" for="inputSuccess1">Email</label>
                                     <input type="text" class="form-control" id="postTitle" aria-describedby="helpBlock2" name="email">
                                 </div>
-                                <p><button type="submit" class="btn btn-primary">Send</button>
-</p>
-                            </form>
-
-        
+                                <p><button type="submit" class="btn btn-primary">Send</button></p>
+                            </form>       
                         </div>
                     </div>
                 </div>

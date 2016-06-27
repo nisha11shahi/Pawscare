@@ -4,6 +4,7 @@
 
 <div id="page-wrapper" class="reportform">
 <div class="panel-body">
+    <h2>ANIMALS FOR ADOPTION</h2><hr>
     <div class="table-responsive">
         <table class="table table-striped table-bordered" id="mydata">
             <thead>

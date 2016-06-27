@@ -9,7 +9,8 @@ use App\Contact;
 
 class AdminMessageController extends Controller
 {
-	public function showmessagelist(){
+	public function showmessagelist()
+	{
 
 		$Contact= Contact::all();
 		return view('admin/admin-message')->with('contacts',$Contact);

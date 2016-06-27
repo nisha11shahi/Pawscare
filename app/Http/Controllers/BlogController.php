@@ -8,12 +8,16 @@ use App\Http\Requests;
 
 class BlogController extends Controller
 {
-     public function show()
-     {
-    	return view('frontend/blog');
-    }
-
-public function showsinglepost(){
+	
+    public function showsinglepost()
+    {
     	return view('frontend/blog-post');
     }
-    }
+
+    public function showallpost()
+  {
+    $blogs=\App\Blog::orderBy('id', 'desc')->get();
+    return view('frontend/blog')->with('blogs',$blogs) ;
+   
+}
+}

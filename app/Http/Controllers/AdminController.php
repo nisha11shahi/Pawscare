@@ -13,7 +13,9 @@ class AdminController extends Controller
     {
     	return view('admin/dashboard');
     }
-    public function showlist(){
+    
+    public function showlist()
+    {
 
     	$users=User::all();
     	return view('admin/admin-user')->with('users',$users );

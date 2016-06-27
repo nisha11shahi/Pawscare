@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Session;
 use App\Http\Requests;
 use App\LostandFound;
 
@@ -14,7 +15,8 @@ class AdminLostandFoundController extends Controller
     	return view('admin/admin-lostandfound');
     }
 
-    public function viewall(){
+    public function viewall()
+    {
         $LostandFound= LostandFound::all();
         return view('admin/admin-lostandfoundlist')->with('lostandfounds',$LostandFound);
     }
@@ -38,7 +40,6 @@ class AdminLostandFoundController extends Controller
         return redirect()->back();
     }
     
-   
     public function deleteAnimal($id)
     {
     	$LostandFound=LostandFound::find($id);

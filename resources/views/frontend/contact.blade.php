@@ -31,6 +31,9 @@
         <div class="row">
             <div class="col-md-8">
                 <h2 style="padding-top: 20px;"><b>Contact Us</b></h2><hr>
+                 @if(Session::has('flash_message'))
+                    <div class="alert alert-danger"><em> {!! session('flash_message') !!}</em></div>
+                        @endif
                 <form name="sentMessage" method="POST" action="{{url('/submitcontactform')}}" id="contactForm" class="contactForm" novalidate>
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="control-group form-group">

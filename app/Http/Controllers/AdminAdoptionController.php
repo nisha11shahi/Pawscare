@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Session;
 use App\Adoption;
 use App\Requestadopt;
 
@@ -16,15 +17,18 @@ class AdminAdoptionController extends Controller
     	return view('admin/admin-adoption');
     }
 
-    public function viewall(){
+    public function viewall()
+    {
         $Adoptions= Adoption::all();
         return view('admin/admin-adoptionlist')->with('adoptions',$Adoptions);
     }
 
-    public function viewallmessage(){
+    public function viewallmessage()
+    {
         $Adoptions= Requestadopt::all();
         return view('admin/admin-adoptionmessage')->with('requestadopts',$Adoptions);
     }
+    
     public function addnewanimal(Request $request)
     {
     	

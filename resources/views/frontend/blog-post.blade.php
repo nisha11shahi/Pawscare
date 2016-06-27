@@ -8,10 +8,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Blog Post
-                    
-                </h1>
-                
+                <h1 class="page-header">Blog Post</h1> 
             </div>
         </div>
         <!-- /.row -->
@@ -21,8 +18,6 @@
 
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
-
-
 
                 <!-- Date/Time -->
                 <p><i class="fa fa-clock-o"></i> Posted on August 24, 2013 at 9:00 PM</p>

@@ -3,6 +3,9 @@
 @section('content')
 
 <div id="page-wrapper" class="reportform">
+  @if(Session::has('flash_message'))
+            <div class="alert alert-success"><em> {!! session('flash_message') !!}</em></div>
+        @endif
 
 <h2 style="padding-top: 30px">Add Lost and Found Animals</h2>
 <a href="{{url('/viewalllostandfound')}}"><button type="submit" class="btn btn-primary">View All</button></a>

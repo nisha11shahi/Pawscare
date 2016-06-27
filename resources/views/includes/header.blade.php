@@ -54,7 +54,7 @@
                         <a href="{{url('/adopt')}}">Adopt</a>
                     </li>
                     <li>
-                        <a href="survey.html">Survey</a>
+                        <a href="{{url('/survey')}}">Survey</a>
                     </li>
                     <li>
                         <a href="{{url('/lostandfound')}}">Lost & Found</a>

@@ -4,6 +4,7 @@
 @section('content')
 <div class="row ">
   <div class="col-lg-12">
+    
     <h2 class="page-header">Adoption Form</h2>
   </div>
   <hr>
@@ -11,7 +12,9 @@
   <div class="col-md-10 col-md-offset-1">
 
     <div class="panel panel-default">
-
+ @if(Session::has('flash_message'))
+                    <div class="alert alert-danger"><em> {!! session('flash_message') !!}</em></div>
+                        @endif
       <div class="panel-body">
 
 

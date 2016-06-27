@@ -4,18 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Session;
 use App\Http\Requests;
 use App\Contact;
 
 class ContactMessageController extends Controller
 {
-    public function show(){
+    public function show()
+    {
     	return view('frontend/contact');
     }
 
-public function submitcontactform(Request $request)
+    public function submitcontactform(Request $request)
     {
-  
         $Contact= new Contact;
         $Contact->name = $request->get('name');
         $Contact->number = $request->get('number');
@@ -28,4 +29,4 @@ public function submitcontactform(Request $request)
         
         return redirect()->back();
     }
-    }
+}

@@ -8,7 +8,8 @@ use App\Http\Requests;
 
 class LostandFoundController extends Controller
 {
-    public function show(){
+    public function show()
+    {
     	return view('frontend/lostandfound');
     }
 }

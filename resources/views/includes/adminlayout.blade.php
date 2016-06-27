@@ -17,7 +17,6 @@
     <!-- Custom CSS -->
     <link href="{{asset('/assets/bower_components/metisMenu/dist/metisMenu.min.css')}}" rel="stylesheet">
    
-
     <!-- Custom Fonts -->
     <link href="{{asset('/assets/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 
@@ -64,7 +63,7 @@
                
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-user fa-fw"></i><i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
         
@@ -93,7 +92,7 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="{{ url('/admindashboard') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="{{ url('/admin') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
                             <a href="{{ url('/adminblog') }}"><i class="fa fa-dashboard fa-fw"></i> Blog</a>

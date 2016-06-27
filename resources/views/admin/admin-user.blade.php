@@ -4,7 +4,7 @@
 
 <div id="page-wrapper" class="reportform">
 
-<div class="panel-body">
+<div class="panel-body"><h2>ADMIN LIST</h2> <hr>
 	<div class="table-responsive">
 		<table class="table table-striped table-bordered" id="mydata">
 			<thead>
@@ -12,6 +12,7 @@
 					<th>id</th>
 					<th>User</th>
 					<th>Email</th>
+					<th>Action</th>
 					
 				</tr>
 			</thead>
@@ -22,8 +23,13 @@
 					<td>{{$user->id}}</td>
 					<td>{{$user->name}}</td>
 					<td>{{$user->email}} </td>
-					
-					</tr>
+					<td>
+
+                        <a href="{{URL::route('users.delete',$user->id)}}"
+                                            class="btn btn-danger"> Delete </a>
+
+                    </td>
+				</tr>
 
 					@endforeach
 					

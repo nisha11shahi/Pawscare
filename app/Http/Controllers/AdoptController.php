@@ -5,13 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+
+use Session;
 use App\Adoption;
 use App\Requestadopt;
 
 class AdoptController extends Controller
 {
-    public function show(){
-    	return view('frontend/adopt');
+    public function show()
+    {
+    	$adopts=\App\Adoption::orderBy('id', 'desc')->get();
+    return view('frontend/adopt')->with('adopts',$adopts) ;
     }
 
     public function showform()
