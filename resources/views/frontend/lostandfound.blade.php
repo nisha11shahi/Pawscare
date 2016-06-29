@@ -4,76 +4,25 @@
 @section('content')
 
 <div class="container">
-
-        <!-- Page Heading/Breadcrumbs -->
-        
-
-        <!-- Team Members -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Lost and Found Animals</h2>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="{{asset('/assets/images/lost1.jpg')}}" alt="">
-                    <div class="caption">
-                    
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <a class="btn btn-primary" href="{{url('/contact')}}">Enquiry</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="{{asset('/assets/images/lost2.jpg')}}" alt="">
-                    <div class="caption">
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <a class="btn btn-primary" href="{{url('/contact')}}">Enquiry</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="{{asset('/assets/images/lost3.jpg')}}" alt="">
-                    <div class="caption">
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <a class="btn btn-primary" href="{{url('/contact')}}">Enquiry</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="{{asset('/assets/images/lost4.jpg')}}" alt="">
-                    <div class="caption">
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <a class="btn btn-primary" href="{{url('/contact')}}">Enquiry</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="{{asset('/assets/images/lost5.jpg')}}" alt="">
-                    <div class="caption">
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                <a class="btn btn-primary" href="{{url('/contact')}}">Enquiry</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="{{asset('/assets/images/lost6.jpg')}}" alt="">
-                    <div class="caption">
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <a class="btn btn-primary" href="{{url('/contact')}}">Enquiry</a>
-                    </div>
-                </div>
+                <h1 class="page-header" style="font-size: 30px">Lost and Found Animals</h1>
             </div>
         </div>
+        
+        @foreach($lostandfounds as $key=>$lostandfound)
+        <div class="col-md-4 text-center">
+            <div class="thumbnail">
+                <img class="img-responsive" src="{{asset('/assets/uploads/'.$lostandfound->image)}}" alt="image1" class="img-thumbnail">
+                <div class="caption">
+                    <p>{{$lostandfound->description}}</p>
+                    <a class="btn btn-primary" href="{{url('/contact')}}">Enquiry</a>
 
+                </div>
+            </div>  
+       
     </div>
+     @endforeach 
+</div>
+
 @extends('includes.footer')

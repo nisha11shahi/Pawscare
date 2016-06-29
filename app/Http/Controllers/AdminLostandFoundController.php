@@ -24,7 +24,7 @@ class AdminLostandFoundController extends Controller
     public function addnewanimal(Request $request)
     {
     	
-        $destinationPath = 'assets/uploads';
+        $destinationPath = 'assets/uploads/';
         $extension = $request->file('image')->getClientOriginalExtension(); // getting image extension
         $fileName = rand(11111,99999).'.'.$extension; // renameing image
         $request->file('image')->move($destinationPath, $fileName);

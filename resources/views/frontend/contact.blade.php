@@ -7,7 +7,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Contact
+                <h1 class="page-header" style="font-size: 30px">Contact
                     <small></small>
                 </h1>
 
@@ -20,7 +20,16 @@
             <!-- Map Column -->
             <div class="col-md-8">
                 <!-- Embedded Google Map -->
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+                
+                <div style="width:100% ;overflow:hidden; height:400px; max-width:100%;">
+                    <div id="my-map-display" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Kathmandu,+Central+Region,+Nepal&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU">
+                        </iframe>
+                    </div>
+                    <a class="embedded-map-html" href="https://www.interserver-coupons.com" id="make-map-information">here</a><style>#my-map-display .map-generator{max-width: 100%; max-height: 100%; background: none;}
+                    </style>
+                </div>
+                <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=f26e7c75-5b87-caff-97fd-221357521eb7&c=embedded-map-html&u=1467094313" defer="defer" async="async"></script>
             </div>
             
         </div>
@@ -30,7 +39,7 @@
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
         <div class="row">
             <div class="col-md-8">
-                <h2 style="padding-top: 20px;"><b>Contact Us</b></h2><hr>
+                <h2 style="padding-top: 20px;font-size: 30px">Contact Us</h2><hr>
                  @if(Session::has('flash_message'))
                     <div class="alert alert-danger"><em> {!! session('flash_message') !!}</em></div>
                         @endif

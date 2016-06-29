@@ -4,10 +4,8 @@
 @section('content')
 <div class="row ">
   <div class="col-lg-12">
-    
     <h2 class="page-header">Adoption Form</h2>
   </div>
-  <hr>
 
   <div class="col-md-10 col-md-offset-1">
 
@@ -62,13 +60,8 @@
             <label class="control-label" for="inputSuccess1">Why do you want to adopt?</label>
             <textarea class="form-control" rows="5" id="inputwhy" name="whyadopt"></textarea> 
           </div>
-
-
         </div>
-
-
         <button type="submit" class="btn btn-primary">Submit</button>
-
       </form>
 
     </div>

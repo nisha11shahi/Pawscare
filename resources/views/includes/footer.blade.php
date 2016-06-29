@@ -6,18 +6,15 @@
         
             <div class="footer-grids">
                 <div class="footer one">
-                    <h3>More About Company</h3>
-                    <p> Nemo enim ipsam voluptatem quia
-                    voluptas sit aspernatur aut odit aut fugit, 
-                    sed quia consequuntur magni dolores eos qui 
-                    ratione voluptatem sequi nesciunt.</p>
-                    <p class="adam">- Patrick Victoria, CEO</p>
+                    <h3>More About the Website</h3>
+                    <p> The project deals with the scope and use of ICT in rescuing the injured and ill street animals. The central idea of this project is that ICT can help in management of street animals and create awareness among the people to make the lives of street animals better.</p>
+                    <p class="adam">- Aachal Thapa<br/>- Nisha Shahi</p>
                     <div class="clear"></div>
                 </div>
                 <div class="footer two">
                     <h3>Keep Connected</h3>
                     <ul>
-                        <li><a class="fb" href="#"><i></i>Like us on Facebook</a></li>
+                        <li><a class="fb" href="https://www.facebook.com/animalrightsconstitution2072/?ref=aymt_homepage_panel"><i></i>Like us on Facebook</a></li>
                         <li><a class="fb1" href="#"><i></i>Follow us on Twitter</a></li>
                         <li><a class="fb2" href="#"><i></i>Add us on Google Plus</a></li>
                     </ul>
@@ -25,9 +22,9 @@
                 <div class="footer three">
                     <h3>Contact Information</h3>
                     <ul>
-                        <li>The company name <span>Lorem ipsum dolor,</span>Glasglow Dr 40 Fe 72.  </li>
+                        <li>pawsCARE</li>
                         <li>1234567890  </li>
-                        <li><a href="mailto:info@example.com">contact@example.com</a> </li>
+                        <li><a href="mailto:info@example.com">pawsCARE@example.com</a> </li>
                     </ul>
                 </div>
                 <div class="clear"></div>

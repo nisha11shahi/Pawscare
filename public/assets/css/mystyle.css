@@ -41,3 +41,8 @@ div.thumbnail img{
 .viewallbutton{
 	float: right;
 }
+
+
+*{
+	background-color: blue;
+}

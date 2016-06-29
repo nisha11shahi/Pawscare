@@ -32,7 +32,7 @@ class EmergencyController extends Controller
             'token' => 'DVIPK32Pk5rIrj6SBPk9',
             'from'  => 'Demo', //$request->get('contact'),
             'to'    => urldecode('9849418457'),
-            'text'  => $request->get('description')
+            'text'  => 'Emergency, Please Check the website'
             ));
 
         $url = "http://api.sparrowsms.com/v2/sms/";

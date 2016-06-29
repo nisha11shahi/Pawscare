@@ -15,7 +15,7 @@
       <input type="hidden" name="author_id" value="{{Auth::user()->id}}">
       <div class="form-group">
           <label class="control-label" for="inputSuccess1">Name of the animal</label>
-          <input type="text" class="form-control" rows="5" id="name" name="name" value="{{old('image') }}">  
+          <input type="text" class="form-control" rows="5" id="name" name="name" value="{{old('name') }}">  
       </div>
       <div class="form-group">
           <label class="control-label" for="inputSuccess1">Image</label>

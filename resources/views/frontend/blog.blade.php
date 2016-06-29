@@ -7,7 +7,7 @@
 
     <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header"><h2>Blogs
+                <h1 class="page-header" style="font-size: 30px">Blogs
                     <small></small>
                 </h1>
             </div>
@@ -27,7 +27,7 @@
                                 <p><span class="glyphicon glyphicon-time"></span> Posted on {{$blog->created_at->toDateString()}} at  {{$blog->created_at->toTimeString()}}</p>
                                 <p>{{$blog->body}}
                                 </p>
-                                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                <a href="{{url('/singleblog')}}" class="btn btn-primary btn-sm">Read More</a>
                             </div>
                         </div>
                     </div>

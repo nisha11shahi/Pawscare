@@ -14,7 +14,7 @@ class AdoptController extends Controller
 {
     public function show()
     {
-    	$adopts=\App\Adoption::orderBy('id', 'desc')->get();
+    $adopts=\App\Adoption::orderBy('id', 'desc')->get();
     return view('frontend/adopt')->with('adopts',$adopts) ;
     }
 

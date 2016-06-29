@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('frontend/index');
 });
 
+
 Route::get('admin', [
 	'middleware' => 'auth',
     'uses' =>'AdminController@showdashboard'
@@ -28,7 +29,7 @@ Route::get('/lostandfound', 'LostandFoundController@show');
 Route::get('/blog', 'BlogController@showallpost');
 Route::get('/contact', 'ContactMessageController@show');
 Route::get('/adoptform', 'AdoptController@showform');
-Route::get('/singlepost', 'BlogController@showsinglepost');
+Route::get('/singleblog', 'BlogController@showsinglepost');
 
 
 
